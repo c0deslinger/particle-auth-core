@@ -1,0 +1,27 @@
+{
+  "name": "particle_base",
+  "version": "0.0.1",
+  "summary": "A flutter plugin project for particle base",
+  "description": "A flutter plugin project for particle base",
+  "homepage": "https://particle.network",
+  "license": {
+    "file": "../LICENSE"
+  },
+  "authors": {
+    "SunZhiC": "sunzhichao@minijoy.work"
+  },
+  "source": {
+    "path": "."
+  },
+  "source_files": "Classes/**/*",
+  "dependencies": {
+    "Flutter": [],
+    "ParticleNetworkBase": [],
+    "ParticleNetworkChains": []
+  },
+  "platforms": {
+    "ios": "14.0"
+  },
+  "swift_versions": "5.7",
+  "swift_version": "5.7"
+}

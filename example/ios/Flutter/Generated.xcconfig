@@ -1,0 +1,15 @@
+// This is a generated file; do not edit or check into version control.
+FLUTTER_ROOT=/Users/mm/Development/flutter
+FLUTTER_APPLICATION_PATH=/Users/mm/Documents/Work/Research/particle/particle_auth_core-2.1.23/example
+COCOAPODS_PARALLEL_CODE_SIGN=true
+FLUTTER_TARGET=/Users/mm/Documents/Work/Research/particle/particle_auth_core-2.1.23/example/lib/main.dart
+FLUTTER_BUILD_DIR=build
+FLUTTER_BUILD_NAME=0.1.0
+FLUTTER_BUILD_NUMBER=0.1.0
+EXCLUDED_ARCHS[sdk=iphonesimulator*]=i386
+EXCLUDED_ARCHS[sdk=iphoneos*]=armv7
+DART_DEFINES=RkxVVFRFUl9WRVJTSU9OPTMuMzUuNA==,RkxVVFRFUl9DSEFOTkVMPXN0YWJsZQ==,RkxVVFRFUl9HSVRfVVJMPWh0dHBzOi8vZ2l0aHViLmNvbS9mbHV0dGVyL2ZsdXR0ZXIuZ2l0,RkxVVFRFUl9GUkFNRVdPUktfUkVWSVNJT049ZDY5M2I0YjlkYg==,RkxVVFRFUl9FTkdJTkVfUkVWSVNJT049YzI5ODA5MTM1MQ==,RkxVVFRFUl9EQVJUX1ZFUlNJT049My45LjI=
+DART_OBFUSCATION=false
+TRACK_WIDGET_CREATION=true
+TREE_SHAKE_ICONS=false
+PACKAGE_CONFIG=/Users/mm/Documents/Work/Research/particle/particle_auth_core-2.1.23/example/.dart_tool/package_config.json
