@@ -1,0 +1,385 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature OpaqueTypeErasure -enable-bare-slash-regex -module-name SwiftyUserDefaults
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import Foundation
+import Swift
+@_exported import SwiftyUserDefaults
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension SwiftyUserDefaults.DefaultsSerializable {
+  public static var _defaultsArray: SwiftyUserDefaults.DefaultsArrayBridge<[Self.T]> {
+    get
+  }
+}
+extension Foundation.Date : SwiftyUserDefaults.DefaultsSerializable {
+  public static var _defaults: SwiftyUserDefaults.DefaultsObjectBridge<Foundation.Date> {
+    get
+  }
+  @available(iOS 8.0, tvOS 9.0, watchOS 2.0, macOS 10.10, *)
+  public typealias ArrayBridge = SwiftyUserDefaults.DefaultsCodableBridge<[Foundation.Date]>
+  @available(iOS 8.0, tvOS 9.0, watchOS 2.0, macOS 10.10, *)
+  public typealias Bridge = SwiftyUserDefaults.DefaultsObjectBridge<Foundation.Date>
+}
+extension Swift.String : SwiftyUserDefaults.DefaultsSerializable {
+  public static var _defaults: SwiftyUserDefaults.DefaultsStringBridge {
+    get
+  }
+  public typealias ArrayBridge = SwiftyUserDefaults.DefaultsCodableBridge<[Swift.String]>
+  public typealias Bridge = SwiftyUserDefaults.DefaultsStringBridge
+}
+extension Swift.Int : SwiftyUserDefaults.DefaultsSerializable {
+  public static var _defaults: SwiftyUserDefaults.DefaultsIntBridge {
+    get
+  }
+  public typealias ArrayBridge = SwiftyUserDefaults.DefaultsCodableBridge<[Swift.Int]>
+  public typealias Bridge = SwiftyUserDefaults.DefaultsIntBridge
+}
+extension Swift.Double : SwiftyUserDefaults.DefaultsSerializable {
+  public static var _defaults: SwiftyUserDefaults.DefaultsDoubleBridge {
+    get
+  }
+  public typealias ArrayBridge = SwiftyUserDefaults.DefaultsCodableBridge<[Swift.Double]>
+  public typealias Bridge = SwiftyUserDefaults.DefaultsDoubleBridge
+}
+extension Swift.Bool : SwiftyUserDefaults.DefaultsSerializable {
+  public static var _defaults: SwiftyUserDefaults.DefaultsBoolBridge {
+    get
+  }
+  public typealias ArrayBridge = SwiftyUserDefaults.DefaultsCodableBridge<[Swift.Bool]>
+  public typealias Bridge = SwiftyUserDefaults.DefaultsBoolBridge
+}
+extension Foundation.Data : SwiftyUserDefaults.DefaultsSerializable {
+  public static var _defaults: SwiftyUserDefaults.DefaultsDataBridge {
+    get
+  }
+  @available(iOS 8.0, tvOS 9.0, watchOS 2.0, macOS 10.10, *)
+  public typealias ArrayBridge = SwiftyUserDefaults.DefaultsCodableBridge<[Foundation.Data]>
+  @available(iOS 8.0, tvOS 9.0, watchOS 2.0, macOS 10.10, *)
+  public typealias Bridge = SwiftyUserDefaults.DefaultsDataBridge
+}
+extension Foundation.URL : SwiftyUserDefaults.DefaultsSerializable {
+  public static var _defaults: SwiftyUserDefaults.DefaultsUrlBridge {
+    get
+  }
+  public static var _defaultsArray: SwiftyUserDefaults.DefaultsKeyedArchiverBridge<[Foundation.URL]> {
+    get
+  }
+  @available(iOS 8.0, tvOS 9.0, watchOS 2.0, macOS 10.10, *)
+  public typealias ArrayBridge = SwiftyUserDefaults.DefaultsKeyedArchiverBridge<[Foundation.URL]>
+  @available(iOS 8.0, tvOS 9.0, watchOS 2.0, macOS 10.10, *)
+  public typealias Bridge = SwiftyUserDefaults.DefaultsUrlBridge
+}
+extension SwiftyUserDefaults.DefaultsSerializable where Self : Swift.Decodable, Self : Swift.Encodable {
+  public static var _defaults: SwiftyUserDefaults.DefaultsCodableBridge<Self> {
+    get
+  }
+  public static var _defaultsArray: SwiftyUserDefaults.DefaultsCodableBridge<[Self]> {
+    get
+  }
+}
+extension SwiftyUserDefaults.DefaultsSerializable where Self : Swift.RawRepresentable {
+  public static var _defaults: SwiftyUserDefaults.DefaultsRawRepresentableBridge<Self> {
+    get
+  }
+  public static var _defaultsArray: SwiftyUserDefaults.DefaultsRawRepresentableArrayBridge<[Self]> {
+    get
+  }
+}
+extension SwiftyUserDefaults.DefaultsSerializable where Self : Foundation.NSCoding {
+  public static var _defaults: SwiftyUserDefaults.DefaultsKeyedArchiverBridge<Self> {
+    get
+  }
+  public static var _defaultsArray: SwiftyUserDefaults.DefaultsKeyedArchiverBridge<[Self]> {
+    get
+  }
+}
+extension Swift.Dictionary : SwiftyUserDefaults.DefaultsSerializable where Key == Swift.String {
+  public typealias T = [Key : Value]
+  public typealias Bridge = SwiftyUserDefaults.DefaultsObjectBridge<Swift.Dictionary<Key, Value>.T>
+  public typealias ArrayBridge = SwiftyUserDefaults.DefaultsArrayBridge<[Swift.Dictionary<Key, Value>.T]>
+  public static var _defaults: Swift.Dictionary<Swift.String, Value>.Bridge {
+    get
+  }
+  public static var _defaultsArray: Swift.Dictionary<Swift.String, Value>.ArrayBridge {
+    get
+  }
+}
+extension Swift.Array : SwiftyUserDefaults.DefaultsSerializable where Element : SwiftyUserDefaults.DefaultsSerializable {
+  public typealias T = [Element.T]
+  public typealias Bridge = Element.ArrayBridge
+  public typealias ArrayBridge = SwiftyUserDefaults.DefaultsObjectBridge<[Swift.Array<Element>.T]>
+  public static var _defaults: Swift.Array<Element>.Bridge {
+    get
+  }
+  public static var _defaultsArray: Swift.Array<Element>.ArrayBridge {
+    get
+  }
+}
+#if compiler(>=5.3) && $NoncopyableGenerics
+extension Swift.Optional : SwiftyUserDefaults.DefaultsSerializable where Wrapped : SwiftyUserDefaults.DefaultsSerializable {
+  public typealias Bridge = SwiftyUserDefaults.DefaultsOptionalBridge<Wrapped.Bridge>
+  public typealias ArrayBridge = SwiftyUserDefaults.DefaultsOptionalBridge<Wrapped.ArrayBridge>
+  public static var _defaults: SwiftyUserDefaults.DefaultsOptionalBridge<Wrapped.Bridge> {
+    get
+  }
+  public static var _defaultsArray: SwiftyUserDefaults.DefaultsOptionalBridge<Wrapped.ArrayBridge> {
+    get
+  }
+}
+#else
+extension Swift.Optional : SwiftyUserDefaults.DefaultsSerializable where Wrapped : SwiftyUserDefaults.DefaultsSerializable {
+  public typealias Bridge = SwiftyUserDefaults.DefaultsOptionalBridge<Wrapped.Bridge>
+  public typealias ArrayBridge = SwiftyUserDefaults.DefaultsOptionalBridge<Wrapped.ArrayBridge>
+  public static var _defaults: SwiftyUserDefaults.DefaultsOptionalBridge<Wrapped.Bridge> {
+    get
+  }
+  public static var _defaultsArray: SwiftyUserDefaults.DefaultsOptionalBridge<Wrapped.ArrayBridge> {
+    get
+  }
+}
+#endif
+public var Defaults: SwiftyUserDefaults.DefaultsAdapter<SwiftyUserDefaults.DefaultsKeys>
+extension Foundation.UserDefaults {
+  public func hasKey<T>(_ key: SwiftyUserDefaults.DefaultsKey<T>) -> Swift.Bool where T : SwiftyUserDefaults.DefaultsSerializable
+  public func remove<T>(_ key: SwiftyUserDefaults.DefaultsKey<T>) where T : SwiftyUserDefaults.DefaultsSerializable
+  public func removeAll()
+}
+extension SwiftyUserDefaults.DefaultsAdapter {
+  public func observe<T>(_ key: SwiftyUserDefaults.DefaultsKey<T>, options: Foundation.NSKeyValueObservingOptions = [.new, .old], handler: @escaping (SwiftyUserDefaults.DefaultsObserver<T>.Update) -> Swift.Void) -> any SwiftyUserDefaults.DefaultsDisposable where T : SwiftyUserDefaults.DefaultsSerializable, T == T.Bridge.T
+  public func observe<T>(_ keyPath: Swift.KeyPath<KeyStore, SwiftyUserDefaults.DefaultsKey<T>>, options: Foundation.NSKeyValueObservingOptions = [.old, .new], handler: @escaping (SwiftyUserDefaults.DefaultsObserver<T>.Update) -> Swift.Void) -> any SwiftyUserDefaults.DefaultsDisposable where T : SwiftyUserDefaults.DefaultsSerializable, T == T.Bridge.T
+}
+extension Foundation.UserDefaults {
+  public func observe<T>(_ key: SwiftyUserDefaults.DefaultsKey<T>, options: Foundation.NSKeyValueObservingOptions = [.old, .new], handler: @escaping (SwiftyUserDefaults.DefaultsObserver<T>.Update) -> Swift.Void) -> any SwiftyUserDefaults.DefaultsDisposable where T : SwiftyUserDefaults.DefaultsSerializable, T == T.Bridge.T
+}
+public protocol DefaultsProviding {
+  associatedtype KeyStore : SwiftyUserDefaults.DefaultsKeyStore
+  subscript<T>(key key: SwiftyUserDefaults.DefaultsKey<T>) -> T.T where T : SwiftyUserDefaults.DefaultsSerializable, T : SwiftyUserDefaults.OptionalType, T == T.Bridge.T { get nonmutating set }
+  subscript<T>(key key: SwiftyUserDefaults.DefaultsKey<T>) -> T.T where T : SwiftyUserDefaults.DefaultsSerializable, T == T.Bridge.T { get nonmutating set }
+  subscript<T>(keyPath: Swift.KeyPath<Self.KeyStore, SwiftyUserDefaults.DefaultsKey<T>>) -> T.T where T : SwiftyUserDefaults.DefaultsSerializable, T : SwiftyUserDefaults.OptionalType, T == T.Bridge.T { get nonmutating set }
+  subscript<T>(keyPath: Swift.KeyPath<Self.KeyStore, SwiftyUserDefaults.DefaultsKey<T>>) -> T.T where T : SwiftyUserDefaults.DefaultsSerializable, T == T.Bridge.T { get nonmutating set }
+  subscript<T>(dynamicMember keyPath: Swift.KeyPath<Self.KeyStore, SwiftyUserDefaults.DefaultsKey<T>>) -> T.T where T : SwiftyUserDefaults.DefaultsSerializable, T : SwiftyUserDefaults.OptionalType, T == T.Bridge.T { get nonmutating set }
+  subscript<T>(dynamicMember keyPath: Swift.KeyPath<Self.KeyStore, SwiftyUserDefaults.DefaultsKey<T>>) -> T.T where T : SwiftyUserDefaults.DefaultsSerializable, T == T.Bridge.T { get nonmutating set }
+}
+extension SwiftyUserDefaults.DefaultsAdapter : SwiftyUserDefaults.DefaultsProviding {
+  public subscript<T>(key key: SwiftyUserDefaults.DefaultsKey<T>) -> T.T where T : SwiftyUserDefaults.DefaultsSerializable, T : SwiftyUserDefaults.OptionalType, T == T.Bridge.T {
+    get
+    nonmutating set
+  }
+  public subscript<T>(key key: SwiftyUserDefaults.DefaultsKey<T>) -> T.T where T : SwiftyUserDefaults.DefaultsSerializable, T == T.Bridge.T {
+    get
+    nonmutating set
+  }
+  public subscript<T>(keyPath: Swift.KeyPath<KeyStore, SwiftyUserDefaults.DefaultsKey<T>>) -> T.T where T : SwiftyUserDefaults.DefaultsSerializable, T : SwiftyUserDefaults.OptionalType, T == T.Bridge.T {
+    get
+    nonmutating set
+  }
+  public subscript<T>(keyPath: Swift.KeyPath<KeyStore, SwiftyUserDefaults.DefaultsKey<T>>) -> T.T where T : SwiftyUserDefaults.DefaultsSerializable, T == T.Bridge.T {
+    get
+    nonmutating set
+  }
+  public subscript<T>(dynamicMember keyPath: Swift.KeyPath<KeyStore, SwiftyUserDefaults.DefaultsKey<T>>) -> T.T where T : SwiftyUserDefaults.DefaultsSerializable, T : SwiftyUserDefaults.OptionalType, T == T.Bridge.T {
+    get
+    nonmutating set
+  }
+  public subscript<T>(dynamicMember keyPath: Swift.KeyPath<KeyStore, SwiftyUserDefaults.DefaultsKey<T>>) -> T.T where T : SwiftyUserDefaults.DefaultsSerializable, T == T.Bridge.T {
+    get
+    nonmutating set
+  }
+}
+extension Foundation.UserDefaults {
+  public subscript<T>(key: SwiftyUserDefaults.DefaultsKey<T>) -> T.T where T : SwiftyUserDefaults.DefaultsSerializable, T : SwiftyUserDefaults.OptionalType, T == T.Bridge.T {
+    get
+    set
+  }
+  public subscript<T>(key: SwiftyUserDefaults.DefaultsKey<T>) -> T.T where T : SwiftyUserDefaults.DefaultsSerializable, T == T.Bridge.T {
+    get
+    set
+  }
+}
+@dynamicMemberLookup public struct DefaultsAdapter<KeyStore> where KeyStore : SwiftyUserDefaults.DefaultsKeyStore {
+  public let defaults: Foundation.UserDefaults
+  public let keyStore: KeyStore
+  public init(defaults: Foundation.UserDefaults, keyStore: KeyStore)
+  @available(*, unavailable)
+  public subscript(dynamicMember member: Swift.String) -> Swift.Never {
+    get
+  }
+  public func hasKey<T>(_ key: SwiftyUserDefaults.DefaultsKey<T>) -> Swift.Bool where T : SwiftyUserDefaults.DefaultsSerializable
+  public func hasKey<T>(_ keyPath: Swift.KeyPath<KeyStore, SwiftyUserDefaults.DefaultsKey<T>>) -> Swift.Bool where T : SwiftyUserDefaults.DefaultsSerializable
+  public func remove<T>(_ key: SwiftyUserDefaults.DefaultsKey<T>) where T : SwiftyUserDefaults.DefaultsSerializable
+  public func remove<T>(_ keyPath: Swift.KeyPath<KeyStore, SwiftyUserDefaults.DefaultsKey<T>>) where T : SwiftyUserDefaults.DefaultsSerializable
+  public func removeAll()
+}
+public protocol DefaultsBridge {
+  associatedtype T
+  func get(key: Swift.String, userDefaults: Foundation.UserDefaults) -> Self.T?
+  func save(key: Swift.String, value: Self.T?, userDefaults: Foundation.UserDefaults)
+  func deserialize(_ object: Any) -> Self.T?
+}
+public struct DefaultsObjectBridge<T> : SwiftyUserDefaults.DefaultsBridge {
+  public init()
+  public func save(key: Swift.String, value: T?, userDefaults: Foundation.UserDefaults)
+  public func get(key: Swift.String, userDefaults: Foundation.UserDefaults) -> T?
+  public func deserialize(_ object: Any) -> T?
+}
+public struct DefaultsArrayBridge<T> : SwiftyUserDefaults.DefaultsBridge where T : Swift.Collection {
+  public init()
+  public func save(key: Swift.String, value: T?, userDefaults: Foundation.UserDefaults)
+  public func get(key: Swift.String, userDefaults: Foundation.UserDefaults) -> T?
+  public func deserialize(_ object: Any) -> T?
+}
+public struct DefaultsStringBridge : SwiftyUserDefaults.DefaultsBridge {
+  public init()
+  public func save(key: Swift.String, value: Swift.String?, userDefaults: Foundation.UserDefaults)
+  public func get(key: Swift.String, userDefaults: Foundation.UserDefaults) -> Swift.String?
+  public func deserialize(_ object: Any) -> Swift.String?
+  public typealias T = Swift.String
+}
+public struct DefaultsIntBridge : SwiftyUserDefaults.DefaultsBridge {
+  public init()
+  public func save(key: Swift.String, value: Swift.Int?, userDefaults: Foundation.UserDefaults)
+  public func get(key: Swift.String, userDefaults: Foundation.UserDefaults) -> Swift.Int?
+  public func deserialize(_ object: Any) -> Swift.Int?
+  public typealias T = Swift.Int
+}
+public struct DefaultsDoubleBridge : SwiftyUserDefaults.DefaultsBridge {
+  public init()
+  public func save(key: Swift.String, value: Swift.Double?, userDefaults: Foundation.UserDefaults)
+  public func get(key: Swift.String, userDefaults: Foundation.UserDefaults) -> Swift.Double?
+  public func deserialize(_ object: Any) -> Swift.Double?
+  public typealias T = Swift.Double
+}
+public struct DefaultsBoolBridge : SwiftyUserDefaults.DefaultsBridge {
+  public init()
+  public func save(key: Swift.String, value: Swift.Bool?, userDefaults: Foundation.UserDefaults)
+  public func get(key: Swift.String, userDefaults: Foundation.UserDefaults) -> Swift.Bool?
+  public func deserialize(_ object: Any) -> Swift.Bool?
+  public typealias T = Swift.Bool
+}
+public struct DefaultsDataBridge : SwiftyUserDefaults.DefaultsBridge {
+  public init()
+  public func save(key: Swift.String, value: Foundation.Data?, userDefaults: Foundation.UserDefaults)
+  public func get(key: Swift.String, userDefaults: Foundation.UserDefaults) -> Foundation.Data?
+  public func deserialize(_ object: Any) -> Foundation.Data?
+  public typealias T = Foundation.Data
+}
+public struct DefaultsUrlBridge : SwiftyUserDefaults.DefaultsBridge {
+  public init()
+  public func save(key: Swift.String, value: Foundation.URL?, userDefaults: Foundation.UserDefaults)
+  public func get(key: Swift.String, userDefaults: Foundation.UserDefaults) -> Foundation.URL?
+  public func deserialize(_ object: Any) -> Foundation.URL?
+  public typealias T = Foundation.URL
+}
+public struct DefaultsCodableBridge<T> : SwiftyUserDefaults.DefaultsBridge where T : Swift.Decodable, T : Swift.Encodable {
+  public init()
+  public func save(key: Swift.String, value: T?, userDefaults: Foundation.UserDefaults)
+  public func get(key: Swift.String, userDefaults: Foundation.UserDefaults) -> T?
+  public func deserialize(_ object: Any) -> T?
+}
+public struct DefaultsKeyedArchiverBridge<T> : SwiftyUserDefaults.DefaultsBridge {
+  public init()
+  public func save(key: Swift.String, value: T?, userDefaults: Foundation.UserDefaults)
+  public func get(key: Swift.String, userDefaults: Foundation.UserDefaults) -> T?
+  public func deserialize(_ object: Any) -> T?
+}
+public struct DefaultsRawRepresentableBridge<T> : SwiftyUserDefaults.DefaultsBridge where T : Swift.RawRepresentable {
+  public init()
+  public func save(key: Swift.String, value: T?, userDefaults: Foundation.UserDefaults)
+  public func get(key: Swift.String, userDefaults: Foundation.UserDefaults) -> T?
+  public func deserialize(_ object: Any) -> T?
+}
+public struct DefaultsRawRepresentableArrayBridge<T> : SwiftyUserDefaults.DefaultsBridge where T : Swift.Collection, T.Element : Swift.RawRepresentable {
+  public init()
+  public func save(key: Swift.String, value: T?, userDefaults: Foundation.UserDefaults)
+  public func get(key: Swift.String, userDefaults: Foundation.UserDefaults) -> T?
+  public func deserialize(_ object: Any) -> T?
+}
+public struct DefaultsOptionalBridge<Bridge> : SwiftyUserDefaults.DefaultsBridge where Bridge : SwiftyUserDefaults.DefaultsBridge {
+  public typealias T = Bridge.T?
+  public func get(key: Swift.String, userDefaults: Foundation.UserDefaults) -> SwiftyUserDefaults.DefaultsOptionalBridge<Bridge>.T?
+  public func save(key: Swift.String, value: SwiftyUserDefaults.DefaultsOptionalBridge<Bridge>.T?, userDefaults: Foundation.UserDefaults)
+  public func deserialize(_ object: Any) -> SwiftyUserDefaults.DefaultsOptionalBridge<Bridge>.T?
+}
+public struct DefaultsOptionalArrayBridge<Bridge> : SwiftyUserDefaults.DefaultsBridge where Bridge : SwiftyUserDefaults.DefaultsBridge, Bridge.T : Swift.Collection {
+  public typealias T = Bridge.T?
+  public func get(key: Swift.String, userDefaults: Foundation.UserDefaults) -> SwiftyUserDefaults.DefaultsOptionalArrayBridge<Bridge>.T?
+  public func save(key: Swift.String, value: SwiftyUserDefaults.DefaultsOptionalArrayBridge<Bridge>.T?, userDefaults: Foundation.UserDefaults)
+  public func deserialize(_ object: Any) -> SwiftyUserDefaults.DefaultsOptionalArrayBridge<Bridge>.T?
+}
+public struct DefaultsKey<ValueType> where ValueType : SwiftyUserDefaults.DefaultsSerializable {
+  public let _key: Swift.String
+  public let defaultValue: ValueType.T?
+  public init(_ key: Swift.String, defaultValue: ValueType.T)
+  @available(*, unavailable, message: "This key needs a `defaultValue` parameter. If this type does not have a default value, consider using an optional key.")
+  public init(_ key: Swift.String)
+}
+extension SwiftyUserDefaults.DefaultsKey where ValueType : SwiftyUserDefaults.OptionalType, ValueType.Wrapped : SwiftyUserDefaults.DefaultsSerializable {
+  public init(_ key: Swift.String)
+  public init(_ key: Swift.String, defaultValue: ValueType.T)
+}
+public protocol DefaultsKeyStore {
+}
+public struct DefaultsKeys : SwiftyUserDefaults.DefaultsKeyStore {
+  public init()
+}
+public protocol DefaultsDisposable {
+  func dispose()
+}
+@_hasMissingDesignatedInitializers final public class DefaultsObserver<T> : ObjectiveC.NSObject, SwiftyUserDefaults.DefaultsDisposable where T : SwiftyUserDefaults.DefaultsSerializable, T == T.Bridge.T {
+  public struct Update {
+    public let kind: Foundation.NSKeyValueChange
+    public let indexes: Foundation.IndexSet?
+    public let isPrior: Swift.Bool
+    public let newValue: T.T?
+    public let oldValue: T.T?
+  }
+  @objc deinit
+  @objc override final public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
+  final public func dispose()
+}
+public protocol DefaultsSerializable {
+  typealias T = Self.Bridge.T
+  associatedtype Bridge : SwiftyUserDefaults.DefaultsBridge
+  associatedtype ArrayBridge : SwiftyUserDefaults.DefaultsBridge
+  static var _defaults: Self.Bridge { get }
+  static var _defaultsArray: Self.ArrayBridge { get }
+}
+public protocol OptionalType {
+  associatedtype Wrapped
+  static var __swifty_empty: Self { get }
+}
+#if compiler(>=5.3) && $NoncopyableGenerics
+extension Swift.Optional : SwiftyUserDefaults.OptionalType {
+  public static var __swifty_empty: Swift.Optional<Wrapped> {
+    get
+  }
+}
+#else
+extension Swift.Optional : SwiftyUserDefaults.OptionalType {
+  public static var __swifty_empty: Swift.Optional<Wrapped> {
+    get
+  }
+}
+#endif
+public struct SwiftyUserDefaultOptions : Swift.OptionSet {
+  public static let cached: SwiftyUserDefaults.SwiftyUserDefaultOptions
+  public static let observed: SwiftyUserDefaults.SwiftyUserDefaultOptions
+  public let rawValue: Swift.Int
+  public init(rawValue: Swift.Int)
+  public typealias ArrayLiteralElement = SwiftyUserDefaults.SwiftyUserDefaultOptions
+  public typealias Element = SwiftyUserDefaults.SwiftyUserDefaultOptions
+  public typealias RawValue = Swift.Int
+}
+@propertyWrapper final public class SwiftyUserDefault<T> where T : SwiftyUserDefaults.DefaultsSerializable, T == T.Bridge.T {
+  final public let key: SwiftyUserDefaults.DefaultsKey<T>
+  final public let options: SwiftyUserDefaults.SwiftyUserDefaultOptions
+  final public var wrappedValue: T {
+    get
+    set
+  }
+  public init<KeyStore>(keyPath: Swift.KeyPath<KeyStore, SwiftyUserDefaults.DefaultsKey<T>>, adapter: SwiftyUserDefaults.DefaultsAdapter<KeyStore>, options: SwiftyUserDefaults.SwiftyUserDefaultOptions = []) where KeyStore : SwiftyUserDefaults.DefaultsKeyStore
+  public init(keyPath: Swift.KeyPath<SwiftyUserDefaults.DefaultsKeys, SwiftyUserDefaults.DefaultsKey<T>>, options: SwiftyUserDefaults.SwiftyUserDefaultOptions = [])
+  @objc deinit
+}

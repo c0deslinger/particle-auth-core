@@ -1,0 +1,2371 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "particle_base",
+    "printedName": "particle_base",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "particle_base",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ParticleNetworkBase",
+        "printedName": "ParticleNetworkBase",
+        "declKind": "Import",
+        "moduleName": "particle_base"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PNResponseError",
+        "printedName": "PNResponseError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "code",
+            "printedName": "code",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13particle_base15PNResponseErrorV4codeSiSgvp",
+            "mangledName": "$s13particle_base15PNResponseErrorV4codeSiSgvp",
+            "moduleName": "particle_base",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13particle_base15PNResponseErrorV4codeSiSgvg",
+                "mangledName": "$s13particle_base15PNResponseErrorV4codeSiSgvg",
+                "moduleName": "particle_base",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13particle_base15PNResponseErrorV7messageSSSgvp",
+            "mangledName": "$s13particle_base15PNResponseErrorV7messageSSSgvp",
+            "moduleName": "particle_base",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13particle_base15PNResponseErrorV7messageSSSgvg",
+                "mangledName": "$s13particle_base15PNResponseErrorV7messageSSSgvg",
+                "moduleName": "particle_base",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "data",
+            "printedName": "data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13particle_base15PNResponseErrorV4dataSSSgvp",
+            "mangledName": "$s13particle_base15PNResponseErrorV4dataSSSgvp",
+            "moduleName": "particle_base",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 2,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13particle_base15PNResponseErrorV4dataSSSgvg",
+                "mangledName": "$s13particle_base15PNResponseErrorV4dataSSSgvg",
+                "moduleName": "particle_base",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(code:message:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PNResponseError",
+                "printedName": "particle_base.PNResponseError",
+                "usr": "s:13particle_base15PNResponseErrorV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13particle_base15PNResponseErrorV4code7message4dataACSiSg_SSSgAHtcfc",
+            "mangledName": "$s13particle_base15PNResponseErrorV4code7message4dataACSiSg_SSSgAHtcfc",
+            "moduleName": "particle_base",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PNResponseError",
+                "printedName": "particle_base.PNResponseError",
+                "usr": "s:13particle_base15PNResponseErrorV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13particle_base15PNResponseErrorV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13particle_base15PNResponseErrorV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "particle_base",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13particle_base15PNResponseErrorV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13particle_base15PNResponseErrorV6encode2toys7Encoder_p_tKF",
+            "moduleName": "particle_base",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13particle_base15PNResponseErrorV",
+        "mangledName": "$s13particle_base15PNResponseErrorV",
+        "moduleName": "particle_base",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PNStatusModel",
+        "printedName": "PNStatusModel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "status",
+            "printedName": "status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13particle_base13PNStatusModelV6statusSbvp",
+            "mangledName": "$s13particle_base13PNStatusModelV6statusSbvp",
+            "moduleName": "particle_base",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13particle_base13PNStatusModelV6statusSbvg",
+                "mangledName": "$s13particle_base13PNStatusModelV6statusSbvg",
+                "moduleName": "particle_base",
+                "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
+                "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Encodable>",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "data",
+            "printedName": "data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13particle_base13PNStatusModelV4dataxvp",
+            "mangledName": "$s13particle_base13PNStatusModelV4dataxvp",
+            "moduleName": "particle_base",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13particle_base13PNStatusModelV4dataxvg",
+                "mangledName": "$s13particle_base13PNStatusModelV4dataxvg",
+                "moduleName": "particle_base",
+                "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
+                "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Encodable>",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(status:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PNStatusModel",
+                "printedName": "particle_base.PNStatusModel<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:13particle_base13PNStatusModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13particle_base13PNStatusModelV6status4dataACyxGSb_xtcfc",
+            "mangledName": "$s13particle_base13PNStatusModelV6status4dataACyxGSb_xtcfc",
+            "moduleName": "particle_base",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
+            "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Encodable>",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PNStatusModel",
+                "printedName": "particle_base.PNStatusModel<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:13particle_base13PNStatusModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13particle_base13PNStatusModelV4fromACyxGs7Decoder_p_tKcfc",
+            "mangledName": "$s13particle_base13PNStatusModelV4fromACyxGs7Decoder_p_tKcfc",
+            "moduleName": "particle_base",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
+            "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Encodable>",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13particle_base13PNStatusModelV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13particle_base13PNStatusModelV6encode2toys7Encoder_p_tKF",
+            "moduleName": "particle_base",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
+            "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Encodable>",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13particle_base13PNStatusModelV",
+        "mangledName": "$s13particle_base13PNStatusModelV",
+        "moduleName": "particle_base",
+        "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
+        "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Encodable>",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Base58_swift",
+        "printedName": "Base58_swift",
+        "declKind": "Import",
+        "moduleName": "particle_base",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Flutter",
+        "printedName": "Flutter",
+        "declKind": "Import",
+        "moduleName": "particle_base"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "particle_base"
+      },
+      {
+        "kind": "Import",
+        "name": "ParticleNetworkBase",
+        "printedName": "ParticleNetworkBase",
+        "declKind": "Import",
+        "moduleName": "particle_base"
+      },
+      {
+        "kind": "Import",
+        "name": "ParticleNetworkChains",
+        "printedName": "ParticleNetworkChains",
+        "declKind": "Import",
+        "moduleName": "particle_base"
+      },
+      {
+        "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "particle_base"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftyJSON",
+        "printedName": "SwiftyJSON",
+        "declKind": "Import",
+        "moduleName": "particle_base"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ParticleBasePlugin",
+        "printedName": "ParticleBasePlugin",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "bag",
+            "printedName": "bag",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DisposeBag",
+                "printedName": "RxSwift.DisposeBag",
+                "usr": "s:7RxSwift10DisposeBagC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13particle_base18ParticleBasePluginC3bag7RxSwift10DisposeBagCvp",
+            "mangledName": "$s13particle_base18ParticleBasePluginC3bag7RxSwift10DisposeBagCvp",
+            "moduleName": "particle_base",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DisposeBag",
+                    "printedName": "RxSwift.DisposeBag",
+                    "usr": "s:7RxSwift10DisposeBagC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13particle_base18ParticleBasePluginC3bag7RxSwift10DisposeBagCvg",
+                "mangledName": "$s13particle_base18ParticleBasePluginC3bag7RxSwift10DisposeBagCvg",
+                "moduleName": "particle_base",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Method",
+            "printedName": "Method",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "initialize",
+                "printedName": "initialize",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(particle_base.ParticleBasePlugin.Method.Type) -> particle_base.ParticleBasePlugin.Method",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Method",
+                        "printedName": "particle_base.ParticleBasePlugin.Method",
+                        "usr": "s:13particle_base18ParticleBasePluginC6MethodO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "particle_base.ParticleBasePlugin.Method.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Method",
+                            "printedName": "particle_base.ParticleBasePlugin.Method",
+                            "usr": "s:13particle_base18ParticleBasePluginC6MethodO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13particle_base18ParticleBasePluginC6MethodO10initializeyA2EmF",
+                "mangledName": "$s13particle_base18ParticleBasePluginC6MethodO10initializeyA2EmF",
+                "moduleName": "particle_base"
+              },
+              {
+                "kind": "Var",
+                "name": "setChainInfo",
+                "printedName": "setChainInfo",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(particle_base.ParticleBasePlugin.Method.Type) -> particle_base.ParticleBasePlugin.Method",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Method",
+                        "printedName": "particle_base.ParticleBasePlugin.Method",
+                        "usr": "s:13particle_base18ParticleBasePluginC6MethodO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "particle_base.ParticleBasePlugin.Method.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Method",
+                            "printedName": "particle_base.ParticleBasePlugin.Method",
+                            "usr": "s:13particle_base18ParticleBasePluginC6MethodO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13particle_base18ParticleBasePluginC6MethodO12setChainInfoyA2EmF",
+                "mangledName": "$s13particle_base18ParticleBasePluginC6MethodO12setChainInfoyA2EmF",
+                "moduleName": "particle_base"
+              },
+              {
+                "kind": "Var",
+                "name": "getChainInfo",
+                "printedName": "getChainInfo",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(particle_base.ParticleBasePlugin.Method.Type) -> particle_base.ParticleBasePlugin.Method",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Method",
+                        "printedName": "particle_base.ParticleBasePlugin.Method",
+                        "usr": "s:13particle_base18ParticleBasePluginC6MethodO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "particle_base.ParticleBasePlugin.Method.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Method",
+                            "printedName": "particle_base.ParticleBasePlugin.Method",
+                            "usr": "s:13particle_base18ParticleBasePluginC6MethodO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13particle_base18ParticleBasePluginC6MethodO12getChainInfoyA2EmF",
+                "mangledName": "$s13particle_base18ParticleBasePluginC6MethodO12getChainInfoyA2EmF",
+                "moduleName": "particle_base"
+              },
+              {
+                "kind": "Var",
+                "name": "setSecurityAccountConfig",
+                "printedName": "setSecurityAccountConfig",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(particle_base.ParticleBasePlugin.Method.Type) -> particle_base.ParticleBasePlugin.Method",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Method",
+                        "printedName": "particle_base.ParticleBasePlugin.Method",
+                        "usr": "s:13particle_base18ParticleBasePluginC6MethodO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "particle_base.ParticleBasePlugin.Method.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Method",
+                            "printedName": "particle_base.ParticleBasePlugin.Method",
+                            "usr": "s:13particle_base18ParticleBasePluginC6MethodO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13particle_base18ParticleBasePluginC6MethodO24setSecurityAccountConfigyA2EmF",
+                "mangledName": "$s13particle_base18ParticleBasePluginC6MethodO24setSecurityAccountConfigyA2EmF",
+                "moduleName": "particle_base"
+              },
+              {
+                "kind": "Var",
+                "name": "setLanguage",
+                "printedName": "setLanguage",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(particle_base.ParticleBasePlugin.Method.Type) -> particle_base.ParticleBasePlugin.Method",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Method",
+                        "printedName": "particle_base.ParticleBasePlugin.Method",
+                        "usr": "s:13particle_base18ParticleBasePluginC6MethodO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "particle_base.ParticleBasePlugin.Method.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Method",
+                            "printedName": "particle_base.ParticleBasePlugin.Method",
+                            "usr": "s:13particle_base18ParticleBasePluginC6MethodO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13particle_base18ParticleBasePluginC6MethodO11setLanguageyA2EmF",
+                "mangledName": "$s13particle_base18ParticleBasePluginC6MethodO11setLanguageyA2EmF",
+                "moduleName": "particle_base"
+              },
+              {
+                "kind": "Var",
+                "name": "getLanguage",
+                "printedName": "getLanguage",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(particle_base.ParticleBasePlugin.Method.Type) -> particle_base.ParticleBasePlugin.Method",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Method",
+                        "printedName": "particle_base.ParticleBasePlugin.Method",
+                        "usr": "s:13particle_base18ParticleBasePluginC6MethodO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "particle_base.ParticleBasePlugin.Method.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Method",
+                            "printedName": "particle_base.ParticleBasePlugin.Method",
+                            "usr": "s:13particle_base18ParticleBasePluginC6MethodO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13particle_base18ParticleBasePluginC6MethodO11getLanguageyA2EmF",
+                "mangledName": "$s13particle_base18ParticleBasePluginC6MethodO11getLanguageyA2EmF",
+                "moduleName": "particle_base"
+              },
+              {
+                "kind": "Var",
+                "name": "setAppearance",
+                "printedName": "setAppearance",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(particle_base.ParticleBasePlugin.Method.Type) -> particle_base.ParticleBasePlugin.Method",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Method",
+                        "printedName": "particle_base.ParticleBasePlugin.Method",
+                        "usr": "s:13particle_base18ParticleBasePluginC6MethodO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "particle_base.ParticleBasePlugin.Method.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Method",
+                            "printedName": "particle_base.ParticleBasePlugin.Method",
+                            "usr": "s:13particle_base18ParticleBasePluginC6MethodO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13particle_base18ParticleBasePluginC6MethodO13setAppearanceyA2EmF",
+                "mangledName": "$s13particle_base18ParticleBasePluginC6MethodO13setAppearanceyA2EmF",
+                "moduleName": "particle_base"
+              },
+              {
+                "kind": "Var",
+                "name": "setFiatCoin",
+                "printedName": "setFiatCoin",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(particle_base.ParticleBasePlugin.Method.Type) -> particle_base.ParticleBasePlugin.Method",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Method",
+                        "printedName": "particle_base.ParticleBasePlugin.Method",
+                        "usr": "s:13particle_base18ParticleBasePluginC6MethodO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "particle_base.ParticleBasePlugin.Method.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Method",
+                            "printedName": "particle_base.ParticleBasePlugin.Method",
+                            "usr": "s:13particle_base18ParticleBasePluginC6MethodO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13particle_base18ParticleBasePluginC6MethodO11setFiatCoinyA2EmF",
+                "mangledName": "$s13particle_base18ParticleBasePluginC6MethodO11setFiatCoinyA2EmF",
+                "moduleName": "particle_base"
+              },
+              {
+                "kind": "Var",
+                "name": "setCustomUIConfigJsonString",
+                "printedName": "setCustomUIConfigJsonString",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(particle_base.ParticleBasePlugin.Method.Type) -> particle_base.ParticleBasePlugin.Method",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Method",
+                        "printedName": "particle_base.ParticleBasePlugin.Method",
+                        "usr": "s:13particle_base18ParticleBasePluginC6MethodO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "particle_base.ParticleBasePlugin.Method.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Method",
+                            "printedName": "particle_base.ParticleBasePlugin.Method",
+                            "usr": "s:13particle_base18ParticleBasePluginC6MethodO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13particle_base18ParticleBasePluginC6MethodO27setCustomUIConfigJsonStringyA2EmF",
+                "mangledName": "$s13particle_base18ParticleBasePluginC6MethodO27setCustomUIConfigJsonStringyA2EmF",
+                "moduleName": "particle_base"
+              },
+              {
+                "kind": "Var",
+                "name": "setThemeColor",
+                "printedName": "setThemeColor",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(particle_base.ParticleBasePlugin.Method.Type) -> particle_base.ParticleBasePlugin.Method",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Method",
+                        "printedName": "particle_base.ParticleBasePlugin.Method",
+                        "usr": "s:13particle_base18ParticleBasePluginC6MethodO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "particle_base.ParticleBasePlugin.Method.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Method",
+                            "printedName": "particle_base.ParticleBasePlugin.Method",
+                            "usr": "s:13particle_base18ParticleBasePluginC6MethodO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13particle_base18ParticleBasePluginC6MethodO13setThemeColoryA2EmF",
+                "mangledName": "$s13particle_base18ParticleBasePluginC6MethodO13setThemeColoryA2EmF",
+                "moduleName": "particle_base"
+              },
+              {
+                "kind": "Var",
+                "name": "setUnsupportCountries",
+                "printedName": "setUnsupportCountries",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(particle_base.ParticleBasePlugin.Method.Type) -> particle_base.ParticleBasePlugin.Method",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Method",
+                        "printedName": "particle_base.ParticleBasePlugin.Method",
+                        "usr": "s:13particle_base18ParticleBasePluginC6MethodO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "particle_base.ParticleBasePlugin.Method.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Method",
+                            "printedName": "particle_base.ParticleBasePlugin.Method",
+                            "usr": "s:13particle_base18ParticleBasePluginC6MethodO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13particle_base18ParticleBasePluginC6MethodO21setUnsupportCountriesyA2EmF",
+                "mangledName": "$s13particle_base18ParticleBasePluginC6MethodO21setUnsupportCountriesyA2EmF",
+                "moduleName": "particle_base"
+              },
+              {
+                "kind": "Var",
+                "name": "containsParameter",
+                "printedName": "containsParameter",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13particle_base18ParticleBasePluginC6MethodO17containsParameterSbvp",
+                "mangledName": "$s13particle_base18ParticleBasePluginC6MethodO17containsParameterSbvp",
+                "moduleName": "particle_base",
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13particle_base18ParticleBasePluginC6MethodO17containsParameterSbvg",
+                    "mangledName": "$s13particle_base18ParticleBasePluginC6MethodO17containsParameterSbvg",
+                    "moduleName": "particle_base",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "particle_base.ParticleBasePlugin.Method?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Method",
+                        "printedName": "particle_base.ParticleBasePlugin.Method",
+                        "usr": "s:13particle_base18ParticleBasePluginC6MethodO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:13particle_base18ParticleBasePluginC6MethodO8rawValueAESgSS_tcfc",
+                "mangledName": "$s13particle_base18ParticleBasePluginC6MethodO8rawValueAESgSS_tcfc",
+                "moduleName": "particle_base",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13particle_base18ParticleBasePluginC6MethodO8rawValueSSvp",
+                "mangledName": "$s13particle_base18ParticleBasePluginC6MethodO8rawValueSSvp",
+                "moduleName": "particle_base",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13particle_base18ParticleBasePluginC6MethodO8rawValueSSvg",
+                    "mangledName": "$s13particle_base18ParticleBasePluginC6MethodO8rawValueSSvg",
+                    "moduleName": "particle_base",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:13particle_base18ParticleBasePluginC6MethodO",
+            "mangledName": "$s13particle_base18ParticleBasePluginC6MethodO",
+            "moduleName": "particle_base",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "enumRawTypeName": "String",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "register",
+            "printedName": "register(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterPluginRegistrar",
+                "printedName": "any Flutter.FlutterPluginRegistrar",
+                "usr": "c:objc(pl)FlutterPluginRegistrar"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@particle_base@objc(cs)ParticleBasePlugin(cm)registerWithRegistrar:",
+            "mangledName": "$s13particle_base18ParticleBasePluginC8register4withySo07FlutterE9Registrar_p_tFZ",
+            "moduleName": "particle_base",
+            "static": true,
+            "objc_name": "registerWithRegistrar:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handle",
+            "printedName": "handle(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterMethodCall",
+                "printedName": "Flutter.FlutterMethodCall",
+                "usr": "c:objc(cs)FlutterMethodCall"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@particle_base@objc(cs)ParticleBasePlugin(im)handleMethodCall:result:",
+            "mangledName": "$s13particle_base18ParticleBasePluginC6handle_6resultySo17FlutterMethodCallC_yypSgctF",
+            "moduleName": "particle_base",
+            "isOpen": true,
+            "objc_name": "handleMethodCall:result:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ParticleBasePlugin",
+                "printedName": "particle_base.ParticleBasePlugin",
+                "usr": "c:@M@particle_base@objc(cs)ParticleBasePlugin"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@particle_base@objc(cs)ParticleBasePlugin(im)init",
+            "mangledName": "$s13particle_base18ParticleBasePluginCACycfc",
+            "moduleName": "particle_base",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@particle_base@objc(cs)ParticleBasePlugin",
+        "mangledName": "$s13particle_base18ParticleBasePluginC",
+        "moduleName": "particle_base",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ReactiveCompatible",
+            "printedName": "ReactiveCompatible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReactiveBase",
+                "printedName": "ReactiveBase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSObject",
+                    "printedName": "ObjectiveC.NSObject",
+                    "usr": "c:objc(cs)NSObject"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7RxSwift18ReactiveCompatibleP",
+            "mangledName": "$s7RxSwift18ReactiveCompatibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "particle_base",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ParticleNetworkBase",
+        "printedName": "ParticleNetworkBase",
+        "declKind": "Import",
+        "moduleName": "particle_base"
+      },
+      {
+        "kind": "Import",
+        "name": "ParticleNetworkChains",
+        "printedName": "ParticleNetworkChains",
+        "declKind": "Import",
+        "moduleName": "particle_base"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftyJSON",
+        "printedName": "SwiftyJSON",
+        "declKind": "Import",
+        "moduleName": "particle_base"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ShareBase",
+        "printedName": "ShareBase",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ShareBase",
+                "printedName": "particle_base.ShareBase",
+                "usr": "s:13particle_base9ShareBaseC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13particle_base9ShareBaseC6sharedACvpZ",
+            "mangledName": "$s13particle_base9ShareBaseC6sharedACvpZ",
+            "moduleName": "particle_base",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ShareBase",
+                    "printedName": "particle_base.ShareBase",
+                    "usr": "s:13particle_base9ShareBaseC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13particle_base9ShareBaseC6sharedACvgZ",
+                "mangledName": "$s13particle_base9ShareBaseC6sharedACvgZ",
+                "moduleName": "particle_base",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13particle_base9ShareBaseC10initializeyySSF",
+            "mangledName": "$s13particle_base9ShareBaseC10initializeyySSF",
+            "moduleName": "particle_base",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setChainInfo",
+            "printedName": "setChainInfo(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13particle_base9ShareBaseC12setChainInfoySbSSF",
+            "mangledName": "$s13particle_base9ShareBaseC12setChainInfoySbSSF",
+            "moduleName": "particle_base",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setAppearance",
+            "printedName": "setAppearance(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13particle_base9ShareBaseC13setAppearanceyySSF",
+            "mangledName": "$s13particle_base9ShareBaseC13setAppearanceyySSF",
+            "moduleName": "particle_base",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setSecurityAccountConfig",
+            "printedName": "setSecurityAccountConfig(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13particle_base9ShareBaseC24setSecurityAccountConfigyySSF",
+            "mangledName": "$s13particle_base9ShareBaseC24setSecurityAccountConfigyySSF",
+            "moduleName": "particle_base",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setFiatCoin",
+            "printedName": "setFiatCoin(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13particle_base9ShareBaseC11setFiatCoinyySSF",
+            "mangledName": "$s13particle_base9ShareBaseC11setFiatCoinyySSF",
+            "moduleName": "particle_base",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setThemeColor",
+            "printedName": "setThemeColor(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13particle_base9ShareBaseC13setThemeColoryySSF",
+            "mangledName": "$s13particle_base9ShareBaseC13setThemeColoryySSF",
+            "moduleName": "particle_base",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setCustomUIConfigJsonString",
+            "printedName": "setCustomUIConfigJsonString(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13particle_base9ShareBaseC27setCustomUIConfigJsonStringyySSF",
+            "mangledName": "$s13particle_base9ShareBaseC27setCustomUIConfigJsonStringyySSF",
+            "moduleName": "particle_base",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setUnsupportCountries",
+            "printedName": "setUnsupportCountries(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13particle_base9ShareBaseC21setUnsupportCountriesyySSF",
+            "mangledName": "$s13particle_base9ShareBaseC21setUnsupportCountriesyySSF",
+            "moduleName": "particle_base",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setLanguage",
+            "printedName": "setLanguage(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13particle_base9ShareBaseC11setLanguageyySSF",
+            "mangledName": "$s13particle_base9ShareBaseC11setLanguageyySSF",
+            "moduleName": "particle_base",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getChainInfo",
+            "printedName": "getChainInfo()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13particle_base9ShareBaseC12getChainInfoSSyF",
+            "mangledName": "$s13particle_base9ShareBaseC12getChainInfoSSyF",
+            "moduleName": "particle_base",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getLanguage",
+            "printedName": "getLanguage()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13particle_base9ShareBaseC11getLanguageSSyF",
+            "mangledName": "$s13particle_base9ShareBaseC11getLanguageSSyF",
+            "moduleName": "particle_base",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ShareBase",
+                "printedName": "particle_base.ShareBase",
+                "usr": "s:13particle_base9ShareBaseC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13particle_base9ShareBaseCACycfc",
+            "mangledName": "$s13particle_base9ShareBaseCACycfc",
+            "moduleName": "particle_base",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13particle_base9ShareBaseC",
+        "mangledName": "$s13particle_base9ShareBaseC",
+        "moduleName": "particle_base",
+        "isOpen": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Dictionary",
+        "printedName": "Dictionary",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "jsonString",
+            "printedName": "jsonString(prettify:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SD13particle_baseE10jsonString8prettifySSSgSb_tF",
+            "mangledName": "$sSD13particle_baseE10jsonString8prettifySSSgSb_tF",
+            "moduleName": "particle_base",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable>",
+            "sugared_genericSig": "<Key, Value where Key : Swift.Hashable>",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:SD",
+        "mangledName": "$sSD",
+        "moduleName": "Swift",
+        "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable>",
+        "sugared_genericSig": "<Key, Value where Key : Swift.Hashable>",
+        "declAttributes": [
+          "EagerMove",
+          "Frozen"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sequence",
+            "printedName": "Sequence",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(key: τ_0_0, value: τ_0_1)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_1"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Iterator",
+                    "printedName": "Swift.Dictionary<τ_0_0, τ_0_1>.Iterator",
+                    "usr": "s:SD8IteratorV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:ST",
+            "mangledName": "$sST"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Collection",
+            "printedName": "Collection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(key: τ_0_0, value: τ_0_1)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_1"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Index",
+                    "printedName": "Swift.Dictionary<τ_0_0, τ_0_1>.Index",
+                    "usr": "s:SD5IndexV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Iterator",
+                    "printedName": "Swift.Dictionary<τ_0_0, τ_0_1>.Iterator",
+                    "usr": "s:SD8IteratorV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Slice",
+                    "printedName": "Swift.Slice<[τ_0_0 : τ_0_1]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[τ_0_0 : τ_0_1]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:s5SliceV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultIndices",
+                    "printedName": "Swift.DefaultIndices<[τ_0_0 : τ_0_1]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[τ_0_0 : τ_0_1]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:SI"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sl",
+            "mangledName": "$sSl"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByDictionaryLiteral",
+            "printedName": "ExpressibleByDictionaryLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Key",
+                "printedName": "Key",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Value",
+                "printedName": "Value",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s30ExpressibleByDictionaryLiteralP",
+            "mangledName": "$ss30ExpressibleByDictionaryLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasCustomAnyHashableRepresentation",
+            "printedName": "_HasCustomAnyHashableRepresentation",
+            "usr": "s:s35_HasCustomAnyHashableRepresentationP",
+            "mangledName": "$ss35_HasCustomAnyHashableRepresentationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSDictionary",
+                    "printedName": "Foundation.NSDictionary",
+                    "usr": "c:objc(cs)NSDictionary"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DefaultsSerializable",
+            "printedName": "DefaultsSerializable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Bridge",
+                "printedName": "Bridge",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultsObjectBridge",
+                    "printedName": "SwiftyUserDefaults.DefaultsObjectBridge<[Swift.String : τ_0_1]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : τ_0_1]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:18SwiftyUserDefaults0C12ObjectBridgeV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "ArrayBridge",
+                "printedName": "ArrayBridge",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultsArrayBridge",
+                    "printedName": "SwiftyUserDefaults.DefaultsArrayBridge<[[Swift.String : τ_0_1]]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[[Swift.String : τ_0_1]]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : τ_0_1]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "GenericTypeParam",
+                                "printedName": "τ_0_1"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:18SwiftyUserDefaults0C11ArrayBridgeV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:18SwiftyUserDefaults0C12SerializableP",
+            "mangledName": "$s18SwiftyUserDefaults0C12SerializableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/mm\/.pub-cache\/hosted\/pub.dev\/particle_base-2.1.23\/ios\/Classes\/General.swift",
+      "kind": "BooleanLiteral",
+      "offset": 322,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}

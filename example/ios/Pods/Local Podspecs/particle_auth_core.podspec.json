@@ -16,14 +16,35 @@
   "source_files": "Classes/**/*",
   "dependencies": {
     "Flutter": [],
-    "Thresh": [],
-    "ParticleMPCCore": [],
-    "ParticleAuthCore": [],
-    "AuthCoreAdapter": []
+    "Thresh": [
+      "2.0.4"
+    ],
+    "ParticleMPCCore": [
+      "2.0.4"
+    ],
+    "ParticleAuthCore": [
+      "2.0.4"
+    ],
+    "AuthCoreAdapter": [
+      "2.0.4"
+    ],
+    "ParticleNetworkBase": [
+      "2.0.4"
+    ],
+    "ParticleNetworkChains": [
+      "2.0.4"
+    ],
+    "ConnectCommon": [
+      "2.0.4"
+    ],
+    "Base58.swift": [],
+    "RxSwift": [],
+    "SwiftyJSON": []
   },
   "platforms": {
     "ios": "14.0"
   },
+  "static_framework": true,
   "pod_target_xcconfig": {
     "DEFINES_MODULE": "YES",
     "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "i386"

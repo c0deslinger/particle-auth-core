@@ -1,0 +1,11 @@
+framework module particle_base {
+  umbrella header "particle_base-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module particle_base.Swift {
+  header "particle_base-Swift.h"
+  requires objc
+}

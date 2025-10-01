@@ -1,0 +1,57 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature OpaqueTypeErasure -enable-bare-slash-regex -module-name Then
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import CoreGraphics
+import Foundation
+import Swift
+@_exported import Then
+import UIKit.UIGeometry
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol Then {
+}
+extension Then.Then {
+  @inlinable public func with(_ block: (inout Self) throws -> Swift.Void) rethrows -> Self {
+    var copy = self
+    try block(&copy)
+    return copy
+  }
+  @inlinable public func `do`(_ block: (Self) throws -> Swift.Void) rethrows {
+    try block(self)
+  }
+}
+extension Then.Then where Self : AnyObject {
+  @inlinable public func then(_ block: (Self) throws -> Swift.Void) rethrows -> Self {
+    try block(self)
+    return self
+  }
+}
+extension ObjectiveC.NSObject : Then.Then {
+}
+extension CoreFoundation.CGPoint : Then.Then {
+}
+extension CoreFoundation.CGRect : Then.Then {
+}
+extension CoreFoundation.CGSize : Then.Then {
+}
+extension CoreFoundation.CGVector : Then.Then {
+}
+extension Swift.Array : Then.Then {
+}
+extension Swift.Dictionary : Then.Then {
+}
+extension Swift.Set : Then.Then {
+}
+extension Foundation.JSONDecoder : Then.Then {
+}
+extension Foundation.JSONEncoder : Then.Then {
+}
+extension UIKit.UIEdgeInsets : Then.Then {
+}
+extension UIKit.UIOffset : Then.Then {
+}
+extension UIKit.UIRectEdge : Then.Then {
+}

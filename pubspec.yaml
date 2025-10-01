@@ -4,8 +4,8 @@ version: 2.1.23
 homepage: https://particle.network
 
 environment:
-  sdk: '>=3.0.0 <4.0.0'
-  flutter: '>=3.10.6'
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.10.6"
 
 dependencies:
   flutter:
@@ -39,8 +39,6 @@ flutter:
     platforms:
       android:
         package: network.particle.authcore_flutter
-        pluginClass: ParticleAuthCorePlugin
-      ios:
         pluginClass: ParticleAuthCorePlugin
 
   # To add assets to your plugin package, add an assets section, like this:

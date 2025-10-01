@@ -1,0 +1,6 @@
+framework module particle_auth_core {
+  umbrella header "particle_auth_core-umbrella.h"
+
+  export *
+  module * { export * }
+}
