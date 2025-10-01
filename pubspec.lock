@@ -278,10 +278,11 @@ packages:
   particle_base:
     dependency: "direct main"
     description:
-      name: particle_base
-      sha256: "3925798829b098696236cef373e5f4158c9b6165780bfd29bb8f322d4f2da461"
-      url: "https://pub.dev"
-    source: hosted
+      path: "."
+      ref: main
+      resolved-ref: bbf1dc9434aac4db80a66d450c1577d083f0c75d
+      url: "https://github.com/c0deslinger/particle-base.git"
+    source: git
     version: "2.1.23"
   path:
     dependency: transitive

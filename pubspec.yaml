@@ -11,7 +11,10 @@ dependencies:
   flutter:
     sdk: flutter
   plugin_platform_interface: ^2.1.6
-  particle_base: ^2.1.23
+  particle_base:
+    git:
+      url: https://github.com/c0deslinger/particle-base.git
+      ref: main
   # particle_base: ^2.0.0
   #  path: ../particle-base/
 
